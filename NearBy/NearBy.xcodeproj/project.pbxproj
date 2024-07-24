@@ -23,6 +23,10 @@
 		ACEB3FF52C51367100172CCF /* TableView + EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB3FF42C51367100172CCF /* TableView + EXT.swift */; };
 		ACEB3FF92C513D7900172CCF /* PlaceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB3FF82C513D7900172CCF /* PlaceType.swift */; };
 		ACEB3FFB2C513D9500172CCF /* NearbyPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB3FFA2C513D9500172CCF /* NearbyPlace.swift */; };
+		ACEB3FFE2C5165DC00172CCF /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB3FFD2C5165DC00172CCF /* EndPoint.swift */; };
+		ACEB40012C51668000172CCF /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB40002C51668000172CCF /* Environment.swift */; };
+		ACEB40052C51670F00172CCF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB40042C51670F00172CCF /* NetworkManager.swift */; };
+		ACEB40082C5167F500172CCF /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB40072C5167F500172CCF /* ErrorHandling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		ACEB3FF42C51367100172CCF /* TableView + EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView + EXT.swift"; sourceTree = "<group>"; };
 		ACEB3FF82C513D7900172CCF /* PlaceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceType.swift; sourceTree = "<group>"; };
 		ACEB3FFA2C513D9500172CCF /* NearbyPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlace.swift; sourceTree = "<group>"; };
+		ACEB3FFD2C5165DC00172CCF /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		ACEB40002C51668000172CCF /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		ACEB40042C51670F00172CCF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		ACEB40072C5167F500172CCF /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +134,8 @@
 			children = (
 				ACEB3FD72C512AC300172CCF /* Constants */,
 				ACEB3FFC2C51658500172CCF /* Network */,
+				ACEB40062C5167E700172CCF /* ErrorHandling */,
+				ACEB3FFF2C51667800172CCF /* Environment */,
 				ACEB3FF32C51366200172CCF /* Extensions */,
 				ACEB3FD62C512AB900172CCF /* InitializeStoryboard */,
 			);
@@ -253,8 +263,26 @@
 		ACEB3FFC2C51658500172CCF /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				ACEB40042C51670F00172CCF /* NetworkManager.swift */,
+				ACEB3FFD2C5165DC00172CCF /* EndPoint.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		ACEB3FFF2C51667800172CCF /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				ACEB40002C51668000172CCF /* Environment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		ACEB40062C5167E700172CCF /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				ACEB40072C5167F500172CCF /* ErrorHandling.swift */,
+			);
+			path = ErrorHandling;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,9 +364,13 @@
 				ACEB3FD92C512C3300172CCF /* Constants.swift in Sources */,
 				ACEB3FE32C512CA200172CCF /* HomeVC.swift in Sources */,
 				ACEB3FE62C51303800172CCF /* LocationManager.swift in Sources */,
+				ACEB3FFE2C5165DC00172CCF /* EndPoint.swift in Sources */,
 				ACEB3FFB2C513D9500172CCF /* NearbyPlace.swift in Sources */,
+				ACEB40012C51668000172CCF /* Environment.swift in Sources */,
 				ACEB3FBC2C5129A600172CCF /* AppDelegate.swift in Sources */,
+				ACEB40052C51670F00172CCF /* NetworkManager.swift in Sources */,
 				ACEB3FD52C512AB100172CCF /* StoryboardMakeable.swift in Sources */,
+				ACEB40082C5167F500172CCF /* ErrorHandling.swift in Sources */,
 				ACEB3FBE2C5129A600172CCF /* SceneDelegate.swift in Sources */,
 				ACEB3FF92C513D7900172CCF /* PlaceType.swift in Sources */,
 			);
