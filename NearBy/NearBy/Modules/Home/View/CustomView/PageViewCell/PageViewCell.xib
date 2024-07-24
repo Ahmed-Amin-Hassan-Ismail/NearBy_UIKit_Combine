@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="XIp-zd-c8w" customClass="PageViewCell" customModule="NearBy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XIp-zd-c8w" id="SKI-ku-EkF">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="euJ-FD-HP9">
+                        <rect key="frame" x="10" y="10" width="373" height="24"/>
+                    </pageControl>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="euJ-FD-HP9" firstAttribute="top" secondItem="SKI-ku-EkF" secondAttribute="top" constant="10" id="fmD-Qg-C12"/>
+                    <constraint firstItem="euJ-FD-HP9" firstAttribute="leading" secondItem="SKI-ku-EkF" secondAttribute="leading" constant="10" id="gC9-Va-v91"/>
+                    <constraint firstAttribute="trailing" secondItem="euJ-FD-HP9" secondAttribute="trailing" constant="10" id="iPZ-HB-ccP"/>
+                    <constraint firstAttribute="bottom" secondItem="euJ-FD-HP9" secondAttribute="bottom" constant="10" id="mUk-kN-G8J"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="SKI-ku-EkF" id="zaC-L7-SOK"/>
+                <outlet property="pageView" destination="euJ-FD-HP9" id="wkv-0N-JiM"/>
+            </connections>
+            <point key="canvasLocation" x="-262" y="-4"/>
+        </tableViewCell>
+    </objects>
+</document>

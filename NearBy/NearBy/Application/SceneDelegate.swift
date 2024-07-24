@@ -18,8 +18,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func setupRootVC(with windowScene: UIWindowScene) {
         
         let rootVC = HomeVC.initializeFromStoryboard()
+        let navigationController = UINavigationController(rootViewController: rootVC)
+        
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = rootVC
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
 
